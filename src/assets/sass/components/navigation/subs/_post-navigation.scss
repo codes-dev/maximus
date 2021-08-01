@@ -1,0 +1,31 @@
+.post-navigation, .posts-navigation{
+    & .nav-links{
+        display: flex;
+        justify-content: space-between;
+        & .nav-previous {
+            width: 100%;
+            text-align: start;
+        }
+    
+        & .nav-next {
+            width: 100%;
+            text-align: end;
+        }
+        & a{
+            background: $secondary-color-dark;
+            color: white;
+            padding: 2%;
+
+            &:hover{
+                background: $secondary-color;
+                box-shadow: 1px 6px 10px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 1px 6px 10px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 1px 6px 10px 0px rgba(0,0,0,0.75);
+            }
+
+            &:focus{
+                color: gainsboro;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.dropdown-toggle{
+	&.show{
+		& .dropdown-menu{
+			display: block;
+		}
+	}
+}

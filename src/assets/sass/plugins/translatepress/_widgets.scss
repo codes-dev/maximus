@@ -1,0 +1,12 @@
+#trp-floater-ls.trp-color-dark{
+    background: $secondary-color;
+}
+
+#trp-floater-ls-language-list a:hover {
+    color: #000000;
+    background-color: #f8f8f8;
+}
+
+.trp-color-dark #trp-floater-ls-current-language a, .trp-color-dark #trp-floater-ls-language-list a {
+    color: ghostwhite;
+}

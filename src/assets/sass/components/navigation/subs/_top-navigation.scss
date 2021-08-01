@@ -1,0 +1,146 @@
+.c-top-nav{
+    background: #01055e;
+    padding: 0;
+
+    .c-topnav__search-toggler{
+    
+        &  .sub-menu{
+            background: rgba($color: orange, $alpha: 0.5);
+            min-width: 300px;
+            top: 95%;
+            left: -200%;
+    
+            @media only screen and (min-width: 600px) {
+                &{
+                    min-width: 400px;
+                    left: -1125%;
+                }
+            }
+        }
+    }
+
+    & .navbar-nav{
+        flex-direction: row;
+
+        & .current-menu-item,
+        & .current_page_item{
+            & .nav-link{
+                background: orange;
+                color: gainsboro;
+            }
+        }
+
+        & .current-menu-ancestor,
+        & .current-menu-parent{
+            & > .nav-link{
+                background: orange;
+                color: gainsboro;
+            }
+        }
+
+        & .nav-link{
+            color: #ffffff;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+
+            &:hover{
+                background: orange;
+            }
+        }
+        
+    }
+
+    & .sub-menu{
+        z-index: 1030;
+        & .nav-link{
+            color: $secondary-color-dark;
+
+            &:hover{
+                color: white;
+            }
+
+            &:focus{
+                color: gainsboro;
+            }
+        }
+    }
+
+    &-finances{
+        background: #01055e;
+        padding: 0% 0%;
+        & .navbar-nav{
+            flex-direction: row;
+
+            & .current-menu-item,
+            & .current_page_item{
+                & .nav-link{
+                    background: orange;
+                    color: gainsboro;
+                }
+            }
+
+            & .current-menu-ancestor,
+            & .current-menu-parent{
+                & > .nav-link{
+                    background: orange;
+                    color: gainsboro;
+                }
+            }
+        }
+
+        & .nav-link{
+            color: #ffffff;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+
+            &:hover, &.active{
+                background: orange;
+            }
+        }
+
+        & .sub-menu{
+            z-index: 1030;
+            & .nav-link{
+                color: $secondary-color-dark;
+
+                &:hover{
+                    color: white;
+                }
+
+                &:focus{
+                    color: gainsboro;
+                }
+            }
+        }
+    }
+
+    &-finances-mobile{
+        background: #01055e;
+        padding: 0% 0%;
+        & .navbar-nav{
+            flex-direction: row;
+        }
+
+        & .btn-link{
+            color: #ffffff;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+
+            &:hover{
+                background: orange;
+            }
+
+            &:focus{
+                color: gainsboro;
+            }
+        }
+    }
+
+    .c-domain-navigation{
+        & li:not(:last-child()){
+            border-right: 2px solid orange;
+        }
+    }
+}
+
+

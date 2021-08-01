@@ -1,0 +1,151 @@
+.c-utils-nav{
+	background: white;
+	& .custom-logo{
+		width: 6.123rem;
+	}
+
+	& .site-title{
+		color: #00022f;
+		font-weight: bold;
+	}
+
+	& .site-description{
+		color: #00022f;
+		font-weight: bold;
+		font-size: 105%;
+		letter-spacing: 2px;
+	}
+
+	& .navbar-nav{
+		flex-direction: row;
+
+		& .nav-link{
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+
+			& img{
+				width: 60%;
+			}
+
+			& svg{
+				color: orange;
+
+				&:hover, &:focus{
+                    color: $secondary-color;
+                }
+			}
+		}
+	}
+
+	&-finances{
+		background: white;
+		padding: 0.5% 0%;
+		& .custom-logo{
+			width: 4rem;
+
+			@media only screen and (max-width: 600px) {
+				&{
+					width: 3.5rem;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 992px) {
+			& .c-navbar-brand{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		& .navbar-toggler{
+			display: block;
+		}
+
+		& .site-title{
+			color: #00022f;
+			font-weight: bold;
+			@media only screen and (max-width: 600px) {
+				&{
+					font-size: 2rem;
+				}
+			}
+			@media only screen and (max-width: 400px) {
+				&{
+					font-size: 1.5rem;
+				}
+			}
+		}
+	
+		& .site-description{
+			color: #00022f;
+			font-weight: bold;
+			font-size: 130%;
+			letter-spacing: 1.5px;
+			@media only screen and (max-width: 600px) {
+				&{
+					font-size: 1.25rem;
+				}
+			}
+		}
+
+		& .navbar-nav{
+			flex-direction: row;
+		}
+
+		& .btn.c-sidenav__openbtn{
+			background: orange;
+			color: white;
+	
+			&:hover, &:focus{
+				background: $secondary-color;
+			}
+		}
+
+		& .c-top-navigation-finances{
+			& .nav-link{
+				color: $secondary-color-dark;
+				padding-right: 0.75rem;
+				padding-left: 0.75rem;
+			}
+
+			& .search-form{
+				padding: 0 1.5rem;
+			}
+		}
+	}
+}
+
+.c-utils-finances-mobile{
+	background: white;
+	padding: 1.25% 0%;
+	@media only screen and (min-width: 600px) {
+		&{
+			padding: 0.75% 0%;
+		}
+	}
+	& .navbar-nav{
+		flex-direction: row;
+
+		& .nav-link{
+            padding-right: 1rem;
+            padding-left: 1rem;
+		}
+	}
+	& .btn.c-sidenav__openbtn{
+		background: orange;
+		color: white;
+
+		&:hover, &:focus{
+			background: $secondary-color;
+		}
+	}
+}
+
+.c-utility-finances-navigation{
+	flex-direction: row;
+
+	& .nav-link{
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+}

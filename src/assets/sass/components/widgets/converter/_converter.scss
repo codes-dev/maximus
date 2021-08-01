@@ -1,0 +1,27 @@
+.maximus_currency_converter{
+    background: white;
+    border: 1.5px solid #01055e;
+    max-width: 350px;
+    padding: 1.25%;
+
+    & .nav{
+        & .nav-item{
+            & a{
+                border: 1px solid #01055e;
+
+                &.active{
+                    background: #01055e;
+                }
+            }
+        }
+    }
+
+    & .maximus_converter_rates_header{
+        display: none;
+    }
+
+    & .maximus_currencies_convert{
+        background: #01055e;
+        color: white;
+    }
+}

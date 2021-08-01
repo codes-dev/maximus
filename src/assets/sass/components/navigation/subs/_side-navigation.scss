@@ -1,0 +1,282 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #00022f; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    &.show{
+        width: 35%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        &.show{
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 992px) {
+        &.show{
+            width: 50%;
+        }
+    }
+
+    & .c-utils-navigation.navbar-nav{
+        justify-content: center;
+        margin: 0;
+		flex-direction: row;
+
+		& .nav-link{
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            
+            &:hover{
+                border: none;
+            }
+
+			& img{
+				width: 60%;
+			}
+
+            & svg{
+				color: orange;
+
+                &:hover, &:focus{
+                    color: $secondary-color;
+                }
+			}
+		}
+    }
+
+    & .custom-logo{
+		width: 6.123rem;
+	}
+
+
+    & .navbar-nav{
+        flex-direction: column;
+        padding: 0 5%;
+
+        & .current-menu-item,
+        & .current_page_item{
+            & .nav-link{
+                border-top: 1.5px solid orange;
+                border-bottom: 1.5px solid orange;
+                color: gainsboro;
+            }
+        }
+
+        & .current-menu-ancestor,
+        & .current-menu-parent{
+            & > .nav-link{
+                border-top: 1.5px solid orange;
+                border-bottom: 1.5px solid orange;
+                color: gainsboro;
+            }
+        }
+        
+        & .nav-link{
+            color: white;
+            font-size: 1.25rem;
+            text-align: center;
+
+            &:hover{
+                border-top: 1.5px solid orange;
+                border-bottom: 1.5px solid orange;
+            }
+
+            &:focus{
+                color: gainsboro;
+            }
+
+            &.active{
+                border-top: 1.5px solid orange;
+                border-bottom: 1.5px solid orange;
+                & + .sub-menu{
+                    display: block;
+                }
+            }
+        }
+
+        & .dropdown-menu{
+            display: none;
+            position: unset;
+            margin: 0;
+            & .current-menu-item,
+            & .current_page_item{
+                & .nav-link{
+                    background: orange;
+                    color: gainsboro;
+                }
+            }
+            & a{
+                color: #00022f;
+                font-size: 1rem;
+                text-align: center;
+
+                &:hover{
+                    background: orange;
+                }
+            }
+        }
+    }
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .c-sidenav-utils{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #FF5733; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    &.show{
+        width: 35%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        &.show{
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 992px) {
+        &.show{
+            width: 50%;
+        }
+    }
+
+    & .navbar-nav{
+        flex-direction: column;
+        padding: 0 5%;
+
+        & .current-menu-item,
+        & .current_page_item{
+            & .nav-link{
+                border-top: 1.5px solid #00022f;
+                border-bottom: 1.5px solid #00022f;
+                color: gainsboro;
+            }
+        }
+
+        & .current-menu-ancestor,
+        & .current-menu-parent{
+            & > .nav-link{
+                border-top: 1.5px solid #00022f;
+                border-bottom: 1.5px solid #00022f;
+                color: gainsboro;
+            }
+        }
+            
+        
+        & .nav-link{
+            color: white;
+            font-size: 1.25rem;
+            text-align: center;
+
+            &:hover{
+                border-top: 1.5px solid #00022f;
+                border-bottom: 1.5px solid #00022f;
+            }
+
+            &:focus{
+                color: gainsboro;
+            }
+
+            &.active{
+                border-top: 1.5px solid #00022f;
+                border-bottom: 1.5px solid #00022f;
+                & + .sub-menu{
+                    display: block;
+                }
+            }
+        }
+
+        & .dropdown-menu{
+            display: none;
+            position: unset;
+            margin: 0;
+
+            & .current-menu-item,
+            & .current_page_item{
+                & .nav-link{
+                    background: #00022f;
+                    color: gainsboro;
+                }
+            }
+            & a{
+                color: #00022f;
+                font-size: 1rem;
+                text-align: center;
+
+                &:hover{
+                    background: #00022f;
+                    color: white;
+                }
+
+                &:focus{
+                    background: #00022f;
+                    color: gainsboro;
+                }
+            }
+        }
+    }
+  }
+
+    /* The navigation menu links */
+    .c-sidenav-utils a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .c-sidenav-utils a:hover {
+    color: #f1f1f1;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .c-sidenav-utils .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }

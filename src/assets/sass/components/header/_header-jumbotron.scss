@@ -1,0 +1,29 @@
+.c-header-jumbotron {
+    & h1{
+        margin-top: 12.5%;
+        font-size: 175%;
+    }
+
+    & p{
+        font-size: 80%;
+    }
+
+    /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+    @media screen and (min-width: 600px) {
+        & h1{
+            margin-top: 8.5%;
+            font-size: 250%;
+        }
+
+        & p{
+            font-size: 100%;
+        }
+    }
+
+    /* If screen size is more than 992px wide, set the font-size of <div> to 80px */
+    @media screen and (min-width: 992px) {
+        & h1{
+            margin-top: 5%;
+        }
+    }
+}

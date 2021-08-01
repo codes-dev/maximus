@@ -1,0 +1,47 @@
+.comment-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	& .c-comment{
+		//background: #fdfdfd;
+		border: 0.125rem solid #f7f7f9a2;
+		padding: 1.5% 0.5%;
+
+		&.bypostauthor {
+			border-left: 0.25rem solid $primary-color;
+		}
+
+		&__info{
+			& a{
+				color: $primary-color;
+
+				&:hover, &:focus{
+					color: $accent-color-1;
+				}
+			}
+		}
+		
+
+		&__footer{
+			& a{
+				color: $secondary-color-dark;
+				width: 100%;
+	
+				&:hover{
+					color: $secondary-color;
+				}
+	
+				&:focus{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+ul.children{
+	list-style: none;
+	margin: 0;
+	padding-left: 3%;
+}
+

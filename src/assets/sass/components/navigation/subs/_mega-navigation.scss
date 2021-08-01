@@ -1,0 +1,79 @@
+.menu-item-has-children{
+
+    & .dropdown-menu{
+        min-width: 225px;
+        max-width: none;
+    }
+
+    &.drop-right{
+            & > .dropdown-menu{
+                top: -5%;
+                left: 100%;
+            }
+    }
+
+    &.drop-down{
+        & > .dropdown-menu{
+            top: 90%;
+            left: 0;
+        }
+    }
+
+    &:hover > .sub-menu{
+        display: block;
+    }
+
+    
+}
+
+
+.c-mega-nav{
+    padding: 0% 1%;
+    background: #03099E;
+    & .navbar-nav {
+        flex-direction: row;
+
+        & .current-menu-item,
+        & .current_page_item{
+            & .nav-link{
+                background: #03099E;
+                color: gainsboro;
+            }
+        }
+
+        & .current-menu-ancestor,
+        & .current-menu-parent{
+            & > .nav-link{
+                background: orange;
+                color: gainsboro;
+            }
+        }
+
+        & .nav-link{
+            color: #ffffff;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            &:hover, &.active{
+                background: orange;
+            }
+
+            &:focus{
+                color: gainsboro;
+            }
+
+            &.active{
+                & + .sub-menu{
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+    & .dropdown-menu{
+        background: orange;
+        border-radius: 0;
+
+    }
+}
+

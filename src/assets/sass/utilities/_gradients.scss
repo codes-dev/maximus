@@ -1,0 +1,22 @@
+.gradient-wpg-primary {
+    /* fallback for old browsers */
+    background: #f85019;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(248, 80, 25, 1), rgba(252, 86, 12, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(248, 80, 25, 1), rgba(252, 86, 12, 1));
+    
+  }
+
+  .gradient-wpg-secondary {
+    /* fallback for old browsers */
+    background: #073bdf;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(7, 59, 223, 0.5), rgba(36, 96, 161, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(7, 59, 223, 0.5), rgba(36, 96, 161, 0.5));
+  }

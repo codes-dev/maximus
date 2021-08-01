@@ -1,0 +1,19 @@
+.tagcloud{
+    & .tag-cloud-link{
+        background: $accent-color-1;
+        display: inline-block;
+        font-size: 105% !important;
+        padding: 1% 2%;
+        color: white;
+        margin: 0 2% 2% 0;
+
+        &:hover{
+            background: $accent-color-1-light;
+        }
+
+        &:focus{
+            background: $accent-color-1-dark;
+        }
+
+    }
+}

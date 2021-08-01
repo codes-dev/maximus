@@ -1,0 +1,20 @@
+.badge-wpg-primary{
+    background: $primary-color-light;
+
+    &:hover{
+        background: $primary-color-dark;
+        color: whitesmoke;
+    }
+
+    &:focus{
+        background: $secondary-color-dark;
+        color: gainsboro;
+    }
+
+    &:visited{
+        color: whitesmoke;
+    }
+
+
+    margin: 0.5% 0.25%;
+}

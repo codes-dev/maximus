@@ -1,0 +1,37 @@
+
+.search-form{
+    & .input-group > .form-control:focus, .input-group > .form-select:focus {
+        z-index: 0;
+    }
+
+    & input{
+        color: rgb(48, 48, 48);
+    }
+
+    & .form-control{
+        border: none;
+        transition: all 0.3s ease-out;
+
+
+        &:not(:focus){
+            background: transparent;  
+            border-bottom: 1px solid $secondary-color-light;          
+        }
+
+        &:focus{
+            box-shadow: none;
+            background: rgba($color: white, $alpha: 0.25);
+            border-bottom: 1px solid $primary-color;
+        }
+    }
+
+    & .btn{
+        background: $secondary-color;
+        color: snow;
+
+        &:hover, &:focus{
+            color: gainsboro;
+            border-color: $primary-color;
+        }
+    }
+}

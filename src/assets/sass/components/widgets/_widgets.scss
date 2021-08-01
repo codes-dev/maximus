@@ -1,0 +1,19 @@
+@import 'tags/tags';
+@import 'calendar/calendar';
+/* Converter
+--------------------------------------------- */
+@import "converter/converter";
+
+.widget {
+	margin: 0 0 1.5em;
+
+	// Make sure select elements fit in widgets.
+	select {
+		max-width: 100%;
+	}
+
+	& ul{
+		list-style: none;
+		margin: 0px;
+	}
+}

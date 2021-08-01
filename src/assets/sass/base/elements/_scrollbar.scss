@@ -1,0 +1,27 @@
+//SCROLLBAR
+/* width */
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $secondary-color-dark;
+}
+  
+::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $secondary-color-dark;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color;
+}

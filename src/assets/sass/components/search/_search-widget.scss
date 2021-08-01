@@ -1,0 +1,34 @@
+.c-topnav__search-toggler{
+    &:hover{
+        & .sub-menu{
+            display: block;
+        }
+    }
+
+    & a{
+        &:hover, &.active{
+            background: orange;
+            color: white;
+        }
+
+        &.active{
+            & + .sub-menu{
+                display: block;
+            }
+        }
+    }
+
+    &  .sub-menu{
+        background: rgba($color: orange, $alpha: 0.5);
+        min-width: 300px;
+        top: 95%;
+        left: -200%;
+
+        @media only screen and (min-width: 600px) {
+            &{
+                min-width: 500px;
+                left: -400%;
+            }
+        }
+    }
+}

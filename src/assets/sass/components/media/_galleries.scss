@@ -1,0 +1,35 @@
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	color: white;
+
+	& a{
+		& img{
+			margin-bottom: 5%;
+			&:hover{
+				box-shadow: 2px 10px 14px 0px rgba(0,0,0,0.75);
+				-webkit-box-shadow: 2px 10px 14px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 2px 10px 14px 0px rgba(0,0,0,0.75);
+			}
+		}
+	}
+}
+
+// Loops to enumerate the classes for gallery columns.
+@for $i from 2 through 9 {
+
+	.gallery-columns-#{$i} {
+		grid-template-columns: repeat($i, 1fr);
+	}
+}
+
+.gallery-caption {
+	display: block;
+}

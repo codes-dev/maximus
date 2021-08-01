@@ -1,0 +1,13 @@
+#breadcrumb{
+    & a{
+        color: $secondary-color-dark;
+        font-weight: 500;
+    }
+    & .breadcrumb_last{
+        color: rgb(136, 136, 136);
+    }
+}
+
+#breadcrumb.navbar{
+    background: transparent;
+}

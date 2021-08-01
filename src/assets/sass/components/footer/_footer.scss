@@ -1,0 +1,60 @@
+.c-footer{
+    & .c-footer-widgets-area{
+        background: $secondary-color-dark;
+
+        & section{
+            padding: 1%;
+        }
+
+        & .c-footer-widget{
+            & .widget-title{
+                color: white;
+                text-align: center;
+            }
+    
+            & ul{
+                list-style: none;
+                text-align: center;
+                padding: 2% 5%;
+                margin: 0;
+                color: whitesmoke;
+            }
+
+            & .current-menu-item, & .current_page_item{
+                & a{
+                    color: $primary-color-dark;
+                }
+            }
+
+            & a{
+                color: orange;
+        
+                &:hover{
+                    color: $primary-color-light;
+                }
+        
+                &:focus{
+                    color: $primary-color-dark;
+                }
+            }
+        }
+    }
+
+    & .c-site-credit{
+        background: $primary-color;
+        color: white;
+
+        & a{
+            color: $secondary-color-dark;
+    
+            &:hover{
+                color: $secondary-color-light;
+            }
+    
+            &:focus{
+                color: $secondary-color-light;
+                text-decoration: underline;
+            }
+        }
+    }
+}
