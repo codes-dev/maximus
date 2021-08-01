@@ -1,0 +1,2 @@
+# maximus
+Custom WordPress Theme
